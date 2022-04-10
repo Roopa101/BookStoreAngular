@@ -1,0 +1,115 @@
+<div class="body" fxflex="100" fxLayout="row" fxLayoutAlign="center center" fxFlexFill  fxLayout.xs="column" fxLayoutAlign.xs="start stretch" fxLayoutGap="-200px" >
+    <mat-card style="height: 330px;border-radius: 27px;width: 500px;background-color: #F5F5F5;">
+        <div fxHide.xs="true">
+            <img class="image" src="assets/2766594.png"  >
+            <p class="text2">ONLINE BOOK SHOPPING</p>
+        </div>
+    </mat-card>
+    <mat-card class="card" style="width:min-content; height: 400px; border-radius: 7px;">
+        <mat-tab-group mat-align-tabs="start" color="none" >
+            <mat-tab label="LOGIN">
+            <div fxLayout="column" fxLayoutAlign="center center">
+            <div class="divs">
+                <div class="textlable">
+                    <mat-label class="text">Email Id</mat-label>
+                </div>           
+                <div class="form1">
+                    
+                    <mat-form-field class="full-width" appearance="outline">                 
+                      <input matInput placeholder="">
+                                    
+                    </mat-form-field>
+                </div> 
+            </div> 
+                     
+            <div class="divs">
+                <div class="textlable">
+                    <mat-label class="text">Password</mat-label>
+                </div>           
+                <div class="form1">
+                    
+                    <mat-form-field class="full-width" appearance="outline">                 
+                      <input matInput placeholder="" type="password">
+                      <mat-error>Invalid Password</mat-error>                  
+                    </mat-form-field>
+                </div> 
+            </div>
+            
+            <div class="link">            
+                <a class="ref" >Forgot Password?</a>
+            </div>
+               
+                <div class="example-button-row">                
+                    <button class="btnlogin" mat-button >Login</button>
+                </div>
+                <a style="padding: 1em;">OR</a>
+                <div class="example-button" fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="25px"> 
+                    <div>
+                        <button mat-button class="btnlogin2" >Facebook</button>
+                    </div>
+                    <div>
+                        <button mat-button class="btnlogin3">Google</button>
+                    </div>                               
+                </div>
+            </div>
+    <!-- REGISTER -->
+            </mat-tab>
+            <mat-tab label="SIGNUP">
+            <form [formGroup]="registerForm" (ngSubmit)="signup()">
+            <div fxLayout="column" fxLayoutAlign="center center">
+                <div class="divs">
+                    <div class="textlable">
+                        <mat-label class="text">FullName</mat-label>
+                    </div>           
+                    <div class="form1">                    
+                        <mat-form-field class="full-width" appearance="outline">                 
+                          <input matInput formControlName="fullName" placeholder="">
+                          <mat-error>Invalid Name</mat-error>                  
+                        </mat-form-field>
+                    </div> 
+                </div>
+                <div class="divs">
+                    <div class="textlable">
+                        <mat-label class="text">Email Id</mat-label>
+                    </div>           
+                    <div class="form1">
+                        
+                        <mat-form-field class="full-width" appearance="outline">                 
+                          <input matInput formControlName="emailId" placeholder="">
+                          <mat-error>Invalid Email</mat-error>                  
+                        </mat-form-field>
+                    </div> 
+                </div>    
+                <div class="divs">
+                    <div class="textlable">
+                        <mat-label class="text">Password</mat-label>
+                    </div>           
+                    <div class="form1">
+                        
+                        <mat-form-field class="full-width" appearance="outline">                 
+                          <input matInput formControlName="password" placeholder="" type="password">
+                          <mat-error>Invalid Password</mat-error>                  
+                        </mat-form-field>
+                    </div> 
+                </div>
+                <div class="divs">
+                    <div class="textlable">
+                        <mat-label class="text">Mobile Number</mat-label>
+                    </div>           
+                    <div class="form1">
+                        
+                        <mat-form-field class="full-width" appearance="outline">                 
+                          <input matInput formControlName="phNo" placeholder="">
+                          <mat-error>Invalid Number</mat-error>                  
+                        </mat-form-field>
+                    </div> 
+                </div>
+                <div class="example-button-row">                
+                    <button class="btnlogin" mat-button>Signup</button>
+                </div>
+            </div>
+        </form>
+            </mat-tab>   
+          </mat-tab-group>
+    </mat-card>
+    </div>

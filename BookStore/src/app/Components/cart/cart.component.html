@@ -1,0 +1,59 @@
+<mat-toolbar style="background-color: #A03037;" >
+    <div style="margin-left: 100px;" >
+        <img class="image" src="../../../assets/education.png"  >
+        <span style="color: #FFFFFF; margin-left: 10px;">Book Store</span>
+    </div>
+  <mat-card class="searchbar" fxLayout="row" fxLayout.xs="row">
+      <img class="searchimg" src="../../../assets/outline_search_black_24dp.png" >
+
+      <input class="search1" type="text" name="search" placeholder="Search" #search
+           fxHide.xs fxHide.sm>
+      
+  </mat-card>
+    <button class="example-icon" aria-label="Example icon-button with heart icon">
+        <img class="image2" src="../../../assets/person_white_24dp.svg"  >
+        <br>
+        <a style="color: #FFFFFF;">Profile</a>
+      </button>
+      <button class="example-icon" aria-label="Example icon-button with share icon">
+        <img class="image2" src="../../../assets/supermarket.png" >
+        <br>
+        <a style="color: #FFFFFF;">Cart</a>
+      </button>  
+</mat-toolbar>
+
+<mat-card class="card">
+    <div>
+        <a class="head">My cart (1)</a>
+        <div style="margin-left: 500px;">
+            <img src="assets/location_on_black_24dp.svg" >
+            <a>BridgeLabz Solutions LLP, No...</a>
+        </div>       
+    </div>
+    <div fxLayout="row" fxLayoutAlign="start center">
+        <div>
+            <img class="cover" src="../../../assets/Image 11.png" >
+        </div>
+        <div style="margin-left: 30px;">
+            <a class="title">Don't Make Me Think</a><br>
+            <a class="author">by Steve Krog</a><br>
+            <a class="price">Rs. 1500</a>
+        </div>
+    </div>
+    <div style="margin-left: 140px;">
+        <button style="width: 24px;height: 24px;">-</button>
+        <input style="width: 41px;height: 24px;" id=demoInput type=number min=1 max=100>
+        <button style="width: 24px;height: 24px;">+</button>
+        <button style="border:unset;">Remove</button>
+    </div>
+    <div style="margin-left: 600px;">
+        <button class="order">Place order</button>
+    </div>
+</mat-card>
+
+<mat-card class="card2"  fxLayout="row" fxLayoutAlign="start center">
+    <a class="text1">Address Details</a>
+</mat-card>
+<mat-card class="card2"  fxLayout="row" fxLayoutAlign="start center">
+    <a class="text1">Order summery</a>
+</mat-card>
